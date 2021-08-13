@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apresentação pessoal</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Materialize compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+    <style>
+
+        :root {
+            font-family: 'Poppins', 'sans-serif';
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            width: 100%;
+        }
+
+        .header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+            width: 100%;
+        }
+
+        .header #name {
+            font-size: 20pt;
+            font-weight: bolder;
+            text-shadow: 2px 2px orange;
+        }
+
+        .header #description {
+            font-size: 14pt;
+        }
+
+        .header img {
+            border: 2px solid orange;
+            border-radius: 100%;
+            width: 40%;
+        }
+
+        .collection {
+            margin-top: 50px;
+        }
+
+        .collection .section {
+            background: #FAFAFA;
+            font-weight: bold;
+            text-shadow: 1px 1px orange;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .collection .content {
+            text-align: justify;
+        }
+
+        .collapsible li.active i {
+            transform: rotate(180deg);
+        }
+
+        .contacts {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            font-size: 50px;
+        }
+
+        .contacts a {
+            color: orange;
+        }
+
+    </style>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="https://avatars.githubusercontent.com/u/61216649?s=400&u=d1583d739061edd9857fc036039e78f8493c4c83&v=4" alt="Foto de perfil">
+            <span id="name">ARTHUR SOUZA</span>
+            <span id="description">Estudante de Informática</span> 
+        </div>
+
+        <ul class="collection">
+            <li class="collection-item section">
+                <i class="material-icons">person</i>&nbsp;<span>Sobre mim</span>
+            </li>
+            <li class="collection-item content">
+                Olá! Sou o Arthur, um estudante do Curso Técnico em Informática, pelo CEFET-MG, apaixonado por programação e Engenharia de Software. 
+                Para mim, desenvolver software é uma arte, e seu processo de criação deve ser acompanhada por uma boa música e um cafézinho (com açúcar). 
+                Me interesso especialmente pelo desenvolvimento WEB, portanto, estudar JavaScript <span style="text-decoration: line-through;">e seus zilhões de frameworks</span> é o que eu mais faço
+                durante o meu tempo fora da escola.
+            </li>
+            <li class="collection-item section">
+                <i class="material-icons">school</i>&nbsp;<span>Formação acadêmica</span>
+            </li>
+            <li class="collection-item content">
+                Atualmente sou estudante CEFET-MG e estou cursando o 3º ano do Ensino Médio com Técnico Integrado em Informática no campus XI - Contagem.
+            </li>
+            <li class="collection-item section">
+                <i class="material-icons">rule</i>&nbsp;<span>Habilidades</span>
+            </li>
+            <li class="collection-item">
+                <span>Node.js</span>
+                <div class="progress orange lighten-4">
+                    <div class="determinate orange" style="width: 90%;"></div>
+                </div>
+
+                <span>JavaScript</span>
+                <div class="progress orange lighten-4">
+                    <div class="determinate orange" style="width: 90%;"></div>
+                </div>
+
+                <span>HTML</span>
+                <div class="progress orange lighten-4">
+                    <div class="determinate orange" style="width: 80%;"></div>
+                </div>
+
+                <span>CSS</span>
+                <div class="progress orange lighten-4">
+                    <div class="determinate orange" style="width: 80%;"></div>
+                </div>
+                
+                <span>React.js</span>
+                <div class="progress orange lighten-4">
+                    <div class="determinate orange" style="width: 65%;"></div>
+                </div>
+
+                <span>Java</span>
+                <div class="progress orange lighten-4">
+                    <div class="determinate orange" style="width: 30%;"></div>
+                </div>
+
+                <span>PHP</span>
+                <div class="progress orange lighten-4">
+                    <div class="determinate orange" style="width: 20%;"></div>
+                </div>
+            </li>
+            <li class="collection-item section">
+                <i class="material-icons">assignment</i>&nbsp;<span>Projetos desenvolvidos</span>
+            </li>
+            <li class="collection-item content">
+                <ul class="collapsible popout">
+                    <li>
+                      <div class="collapsible-header"><i class="material-icons">expand_more</i>Minicurso de Introdução à Informática</div>
+                      <div class="collapsible-body">
+                            <span>Entre os anos de 2019 e 2020, eu, juntamente com dois colegas do curso de Informática e orientado por dois professores do CEFET, ministrei voluntariamente um 
+                            <a style="font-weight: bold;" href="https://www.youtube.com/watch?v=jJxILgMDGYI&list=PLuO52MdZ3neC8gbZ5E6a1YfWzvb0VxMLZ">minicurso de Introdução à Informática</a>, voltado para pessoas
+                            consideradas "analfabetas digitais". O curso foi planejado para o ambiente presencial, entretanto, devido à pandemia da COVID-19,
+                            as aulas precisaram ser adaptadas em vídeo e disponibilizadas no YouTube. Após o final do projeto, os vídeos do curso somavam mais de 400 visualizações.
+                        </span>
+                      </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons">expand_more</i>Minicurso de Introdução à Robótica e Lógica de Programação</div>
+                        <div class="collapsible-body">
+                            <span>Juntamente com o minicurso de Introdução à Informática, ministrei, no mesmo contexto, um 
+                            <a style="font-weight: bold;" href="https://www.youtube.com/watch?v=9YzrZOOX0-o&list=PLuO52MdZ3neAzO0hBhqRzjRgUPTjwvh5W">minicurso de Introdução à Robótica e Lógica de Programação</a>, voltado
+                            para jovens estudantes do Ensino Médio público que se interessam pela área de TI. Após o final do projeto, os vídeos do curso somavam mais de 1200 visualizações.
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons">expand_more</i>Material para Minicurso de WEB</div>
+                        <div class="collapsible-body">
+                            <span>
+                                Ao finalizar os dois minicursos, no ano de 2021, sugeri aos professores orientadores a implementação de um novo minicurso de Desenvolvimento WEB.
+                                Não foi possível implementar o curso por completo, devido às limitações da pandemia no momento, entretanto, foi desenvolvida uma <a href="https://docs.google.com/document/d/1ucdZi9LzIkoQVzTP453e5YyQqY2hb_P8JsNyjkUlymU/edit?usp=sharing">apostila</a> com todos os fundamentos
+                                necessários para que alunos que participassem futuramente do projeto pudessem desenvolver os slides e as aulas do curso.
+                            </span>
+                        </div>
+                    </li>
+                  </ul>
+            </li>
+            <li class="collection-item section">
+                <i class="material-icons">question_answer</i>&nbsp;<span>Quer falar comigo? Tô sempre on!</span>
+            </li>
+            <li class="collection-item content contacts">
+                <a onclick="copyToClipboard()"><i class="fa fa-at"></i></a>
+                <a href="https://wa.me/qr/CNOYFYV5YRMXP1"><i class="fa fa-whatsapp"></i></a>
+                <a href="https://twitter.com/arthh_souza"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.instagram.com/asouza.js/"><i class="fa fa-instagram"></i></a>
+                <a href="https://github.com/ArthurSouzaC"><i class="fa fa-github"></i></a>
+            </li>
+        </ul>
+    </div>
+    <!-- Materialize compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        M.AutoInit();
+        
+        function copyToClipboard() {
+            const email = 'arthursouza.info@gmail.com'
+            navigator.clipboard.writeText(email).then(() => {
+                M.toast({html: 'Email copiado para a área de transferência!', displayLength: 1000, classes: 'orange darken-2'})
+            }).catch(err => {
+                M.toast({html: 'Falha ao copiar!', displayLength: 1000, classes: 'orange darken-2'})
+            })
+        }
+    </script>
+</body>
+</html>
