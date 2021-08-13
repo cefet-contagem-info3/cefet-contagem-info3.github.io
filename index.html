@@ -28,9 +28,11 @@
           <a href="perfis/aluno1.html">Página do Aluno 1</a>
         </div>
         
-        <div class="card-panel light-green lighten-5">
-          <a href="perfis/PEdroHGPires.html">Página do Pedro Henrique Gonçalves Pires</a>
-        </div>
+        <script>
+          for (var i=1; i <= 22; i++) {
+            document.write("<div class=\"card-panel light-green lighten-5\"> + <a href=\"perfis/aluno" + i + ".html\">Página do Aluno " + i + "</a> </div>");
+          }
+        </script>
 
         <div class="card-panel">
           <a href="perfis/testecomponentes.html">Teste Componentes</a>
