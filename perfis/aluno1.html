@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font--><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" >
+    <!-- Compiled and minified JavaScript -->
+    <link href="https://fonts.googleapis.com/css2?family=WindSong&display=swap" rel="stylesheet">       
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+
+  <!--Style CSS-->
+  <style type="text/css">
+    *{
+      margin: 0px;
+      padding: 0px;
+    }
+    #container{
+      height: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f3d3d5;
+      font-family: 'Poppins', sans-serif;
+      color:#000000;
+      font-size: 18px;
+    }
+    #principal{
+      margin-top: 50px;
+      margin-bottom: 50px;
+      height: 100%;
+      width: 50%;
+      background: rgb(106, 187, 253);
+    }
+
+    .cabecalho{
+      background: rgb(131, 199, 255);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      border-bottom: 5px #f6b2b5 solid;
+    }
+
+    .responsive-img{
+      border-radius: 100%;
+      width: 15vw;
+      height: 15vh;
+      margin: 15px;
+    }
+
+    .nome{
+      color: #000000;
+      text-align: center;
+      font-size: 50px;
+    }
+
+    .profissao{
+      color: #1A1919;
+      text-align:center;
+      font-family: 'Poppins', sans-serif;
+      color:#000000;
+      font-size: 20px;
+    }
+
+    
+    .corpo .card{
+      width: 50%;
+      min-width: 50%;   
+    }
+
+    .corpo{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+
+    #paragrafo{
+      text-align: center;
+    }
+
+    #flexbox{
+      display: flex;  
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: space-between;
+    }
+
+    #test7{
+      margin-right: 5px;
+      margin-top: 5px;
+    }
+
+    .card.informacoes{
+      display: flex;
+      justify-content:end;
+      align-items:flex-end;
+      height: 100%;
+      width: 100%;
+    }
+
+    @media screen and (max-width: 600px) {
+        #principal{
+          width: 100%;
+        }
+        .card-tabs{
+          width: 100%;
+        }
+    }
+  </style>
+  <!--Body-->
+  <body>
+    <div id="container">
+      <div id="principal">
+        <div class="cabecalho"> 
+          <img class="responsive-img" src="https://avatars.githubusercontent.com/u/62066699?s=400&u=d58125c0d78264ba7242e549ea6570e1aa807951&v=4"> 
+          <p class="nome"> Ana Alice </p>
+          <p class="profissao"> Estudante de Informática</p><br>
+        </div>
+        <div class="corpo"> 
+          <!-- Sobre mim -->
+          <div class="card">
+            <div class="card-tabs">
+              <ul class="tabs tabs-fixed-width">
+                <li class="tab"><a class="informacoes"><b>Sobre mim</b></a></li>
+              </ul>
+            </div>
+            <div class="card-content grey lighten-4">
+              <div id="test1">Olá! Me chamo Ana Alice! <br>Atualmente estou cursando o terceiro ano do ensino médio na escola federal CEFET, juntamente com o técnico integrado em Informática. Tenho 18 anos e até então pretendo
+                continuar na área da programação, estudando cada vez mais linguagens. Em meus passatempos, adoro jogar algum joguinho e assistir uma série ou anime para distrair.</div>
+            </div>
+          </div> 
+
+          <!-- Trabalhos recentes -->
+          <div class="card">
+            <div class="card-content">
+              <p id="paragrafo">Trabalhos Recentes</p>
+            </div>
+            <div class="card-tabs"> 
+              <ul class="tabs tabs-fixed-width">
+                <li class="tab"><a href="#test4"><b>Projeto 1</b></a></li>
+                <li class="tab"><a class="active" href="#test5"><b>Projeto 2</b></a></li>
+                <li class="tab"><a href="#test6"><b>Projeto 3</b></a></li>
+              </ul>
+            </div>
+            <div class="card-content grey lighten-4">
+              <div id="test4"><a href="https://github.com/AnaAlice951/side-scrolling-java">Jogo</a> insipirado em Castlevania 1986 da Nitendo e feito em Java</div>
+              <div id="test5">Projeto <a href="https://www.youtube.com/channel/UCLTlgEy7UfC6CYRVN1fSXNw">Um passeio no mundo dos Bits</a>, oferecendo cursos onlines e gratuitos sobre robótica e informática</div>
+              <div id="test6"><a href="https://github.com/AnaAlice951/fast-food-atari-java">Jogo</a> inspirado no Fast-Food do Atari de 1982 e feito em Java</div>
+            </div>
+          </div>
+
+          <!-- Contato -->
+          <div class="card">
+            <div class="card-tabs">
+              <ul class="tabs tabs-fixed-width">
+                <li class="tab"><a><p id="paragrafo"><b>Contato</b></p></a></li>
+              </ul>
+            </div>
+            <div class="card-content grey lighten-4">
+              <div id="flexbox">
+                <div id="test7"><a class="waves-effect waves-light btn blue" href="https://wa.me/qr/6Z3AHFYSER3BB1"><i class="material-icons left"> <i class="fa fa-whatsapp"></i></i>Whatsapp</a></div>
+                <div id="test7"><a class="waves-effect waves-light btn blue" href="https://www.facebook.com/anaalice.gomes.35/"><i class="material-icons left"><i class="fa fa-facebook"></i></i>Facebook</a></div>
+                <div id="test7"><a class="waves-effect waves-light btn blue" href="https://github.com/AnaAlice951"><i class="material-icons left"><i class="fa fa-github"></i></i>Github</a></div> 
+                <div id="test7"><a class="waves-effect waves-light btn blue" href="https://www.instagram.com/anaalice951/"><i class="material-icons left"><i class="fa fa-instagram"></i></i>Instagram</a></div>
+                <div id="test7"><a class="waves-effect waves-light btn blue" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><i class="material-icons left"><i class="fa fa-twitter"></i></i></i>Twitter</a></div>
+              </div>
+            </div>
+          </div>
+        </div> 
+      </div>
+    </div>
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+      M.AutoInit();
+    </script>
+  </body>
+</html>
+        
