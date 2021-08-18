@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="UTF-8" />
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+      <title> Página Pessoal</title>
+      <!-- Compiled and minified CSS -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+      <!-- Compiled and minified JavaScript -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+      <style type = "text/css">
+
+        body {
+            background-color: black;
+        }
+
+        p, h5, h3 {
+            color: white;
+            font-family: monospace;
+        }
+
+        h5, h3 {
+            text-shadow: 2px 2px darkslategrey;
+        }
+
+        .circleImage{
+            width: 200px;
+            clip-path: circle();
+            align-content: center;
+            border: 3px solid white;
+            border-radius: 50%;
+        }
+
+        .center {
+            margin-top: 5%;
+            display: block;
+        }
+
+        .circleImageCenter{
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width: 50%;
+          width: 200px;
+          clip-path: circle();
+          align-content: center;
+        }
+
+        img.ctts {
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+        }
+
+        .ctts-div {
+            padding: 0;
+        }
+
+        a.ctts {
+            margin-left: 20px;
+        }
+
+        summary.topicos {
+            color: white;
+            font-size: 25px;
+            text-shadow: 2px 2px darkslategrey;
+            font-family: monospace;
+        }
+        
+        summary.email-summary {
+            color: white;
+            font-size: 15px;
+            font-family: monospace;
+        }
+
+        div.email-card {
+            width: 25%;
+            border: 3px solid white;
+            font-family: monospace;
+            color: white;
+        }
+
+      </style>
+    </head>
+
+    <body>
+
+      <div class="container">
+        <!-- Page Content goes here -->
+        <div class="center">
+            <img src = "https://avatars.githubusercontent.com/u/86377543?s=400&u=c62be84c7930cbb6e647453f4a8e44645c020b06&v=4" class = "circleImage" title = "Retrato" alt = "Foto-Joao">
+            <h3> João Vítor </h3>
+            
+            <h5> Informática 3 </h5>
+        </div>
+    
+        <div class="divider"></div>
+
+        <div class="section">     
+            <details>
+                <summary class="topicos">
+                    <i class="material-icons">person</i>&nbsp;<span>Sobre mim</span>
+                </summary>
+                <p>Eai, tudo bem? sou o João Vítor, um estudante do CEFET-MG Campus Contagem de informática.
+                    Gosto muito de desenvolvimento de softwares, principalmente na área de desenvolvimento de jogos.
+                    Tenho conhecimento nas linguagens Java, C, SQL, HTML, Python. 
+                </p>
+            </details>
+        </div>
+        <div class="divider"></div>
+        <div class="section">
+            <details>
+                <summary class="topicos">
+                    <i class="material-icons">auto_stories</i>&nbsp;<span>Formação</span>
+                </summary>
+                <p>Cursando o terceiro ano do ensino técnico em informática do CEFET-MG Campus Contagem,
+                    graduado no curso de inglês da instituição Number One.
+                </p>
+            </details>
+        </div>
+        <div class="divider"></div>
+        <div class="section">
+            <details>
+                <summary class="topicos">
+                    <i class="material-icons">thumb_up</i>&nbsp;<span>Interesses</span>
+                </summary>
+                <p>Gosto de programação em jogos e em WEB apesar de não estar muito familiarizado, jogar video games, assistir séries e animes, Gosto
+                    de ler alguns livros também. Meus gostos musicais são bem variados, gosto de todos 
+                    em geral.
+                </p>
+            </details>
+        </div>
+        <div class="divider"></div>
+        <div class="section">
+            <details>
+                <summary class="topicos">
+                    <i class="material-icons">tips_and_updates</i>&nbsp;<span>Aspirações</span>
+                </summary>
+                <p>Quero em breve estudar ciência da computação na UFMG, pretendo trabalhar
+                    na área de desenvolvimento de software. Ainda não me decidi se é mesmo em jogos
+                    que quero seguir, mas com certeza é uma possibilidade.
+                </p>
+            </details>
+        </div>
+        <div class="divider"></div>
+        <h5>Contatos</h5>
+        <details>
+            <summary class="email-summary">
+                Email
+            </summary>
+            <div class="card-panel cyan darken-4 email-card">joaosouzafranca@outlook.com.br</div>
+        </details>
+        <blockquote class="ctts-div">
+            <a href = "https://github.com/JoaoVFranca" class="ctts">
+                <img class="ctts" src=https://cdn.uconnectlabs.com/wp-content/uploads/sites/46/2019/04/GitHub-Mark-480x480.png?v=9024></img>
+            </a>
+            <a href = "https://www.instagram.com/joaovfranca_/" class="ctts">
+                <img class="ctts" src=https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png></img>
+            </a>
+            <a href = "https://twitter.com/Joaovfranca" class="ctts">
+                <img class="ctts" src=https://imagepng.org/wp-content/uploads/2018/08/twitter-icone.png></img>
+            </a>
+        </blockquote>
+
+      <!--JavaScript at end of body for optimized loading-->
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    </body>
+  </html>
